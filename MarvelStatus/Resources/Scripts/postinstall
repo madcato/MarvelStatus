@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Path to the LaunchAgents directory for the current user
+LAUNCH_AGENTS_DIR="$HOME/Library/LaunchAgents"
+PLIST_FILE="$LAUNCH_AGENTS_DIR/org.veladan.MarvelStatus.plist"
+
+# Plist content
+PLIST_CONTENT="<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+    <key>Label</key>
+    <string>org.veladan.MarvelStatus</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Applications/MarvelStatus.app/Contents/MacOS/MarvelStatus</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+</dict>
+</plist>"
+
+# Create the directory if it doesn't exist
+mkdir -p "$LAUNCH_AGENTS_DIR"
+
+# Write the plist file
+echo "$PLIST_CONTENT" > "$PLIST_FILE"
+chmod 644 "$PLIST_FILE"
+
+# Bootstrap the LaunchAgent
+launchctl bootstrap gui/"$(id -u)" "$PLIST_FILE"
+
+if [ $? -eq 0 ]; then
+    echo "LaunchAgent installed and bootstrapped successfully."
+else
+    echo "Failed to bootstrap LaunchAgent."
+    exit 1
+fi
+

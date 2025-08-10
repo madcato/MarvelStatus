@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import MarvelComicsBar
+@testable import MarvelStatus
 
 final class MarvelAPITests: XCTestCase {
     func testFetchComics() async throws {

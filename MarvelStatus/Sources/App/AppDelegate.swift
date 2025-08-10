@@ -5,6 +5,7 @@
 //  Created by Daniel Vela on 10/8/25.
 //
 
+import ServiceManagement
 import AppKit
 import SwiftUI
 
@@ -21,6 +22,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover?.contentSize = NSSize(width: 400, height: 500)
         popover?.behavior = .transient
         popover?.contentViewController = NSHostingController(rootView: ComicsView())
+        
+        enableAutoStart()
     }
     
     @objc func togglePopover() {
@@ -31,5 +34,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 popover?.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
             }
         }
+    }
+    
+    /// Call this method to ask user to autostart this application
+    private func enableAutoStart() {
+        let helperIdentifier = "org.veladan.MarvelStatus"  // Main app bundle ID
+        SMLoginItemSetEnabled(helperIdentifier as CFString, true)
+        
+        installLaunchAgent()
     }
 }

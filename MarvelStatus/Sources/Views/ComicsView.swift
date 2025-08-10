@@ -19,18 +19,7 @@ struct ComicsView: View {
                     ForEach(viewModel.groupedComics.keys.sorted(), id: \.self) { creator in
                         Section(header: Text(creator)) {
                             ForEach(viewModel.groupedComics[creator] ?? []) { comic in
-                                NavigationLink(destination: ComicDetailView(comic: comic)) {
-                                    HStack {
-                                        if let url = comic.thumbnail?.url {
-                                            AsyncImage(url: url) { image in
-                                                image.resizable().frame(width: 50, height: 50)
-                                            } placeholder: {
-                                                ProgressView()
-                                            }
-                                        }
-                                        Text(comic.title)
-                                    }
-                                }
+                                ComicsCreatorTableRow(comic: comic)
                             }
                         }
                     }
