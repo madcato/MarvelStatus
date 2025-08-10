@@ -17,9 +17,6 @@ class MarvelAPI {
         let ts = String(Int(Date().timeIntervalSince1970))
         let challenge = ts + privateKey + publicKey
         let hash = md5(string: challenge)
-
-        print(challenge)
-        print(hash)
         
         var components = URLComponents(string: baseURL)!
         components.queryItems = [

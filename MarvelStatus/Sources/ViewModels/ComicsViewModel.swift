@@ -19,14 +19,18 @@ class ComicsViewModel: ObservableObject {
             let comics = try await api.fetchComics()
             var groups: [String: [Comic]] = [:]
             for comic in comics {
+                if comic.creators.items.isEmpty {
+                    Logger.warning("Comic '\(comic.title)' has no creators")
+                }
                 for creator in comic.creators.items {
                     groups[creator.name, default: []].append(comic)
                 }
             }
             self.groupedComics = groups.sorted(by: { $0.key < $1.key }).reduce(into: [:]) { $0[$1.key] = $1.value }
         } catch {
+            // Log error complete information
+            Logger.error("Failed to load comics: \(error.localizedDescription)")
             self.error = error
-            // TODO: Log error complete information
         }
     }
 }
