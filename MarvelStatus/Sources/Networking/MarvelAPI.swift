@@ -9,8 +9,8 @@ import Foundation
 import CommonCrypto
 
 class MarvelAPI {
-    private let publicKey = "<your api key>"
-    private let privateKey = "<private key>"
+    private let publicKey = Secrets.marvelPublicKey
+    private let privateKey = Secrets.marvelPrivateKey
     private let baseURL = "https://gateway.marvel.com/v1/public/comics"
 
     func fetchComics() async throws -> [Comic] {
