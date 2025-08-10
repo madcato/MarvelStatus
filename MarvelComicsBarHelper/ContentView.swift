@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  MarvelStatus
+//  MarvelComicsBarHelper
 //
 //  Created by Daniel Vela on 10/8/25.
 //

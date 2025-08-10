@@ -6,14 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0BE58D762E48CACF000C6179 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 0BE58D752E48CAC8000C6179 /* readme.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BE58DB62E48D02E000C6179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BE58D3E2E48C961000C6179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BE58D452E48C961000C6179;
+			remoteInfo = MarvelStatus;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0BE58D462E48C961000C6179 /* MarvelStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE58D752E48CAC8000C6179 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		0BE58D992E48CDBC000C6179 /* MarvelComicsBarHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelComicsBarHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE58DB22E48D02E000C6179 /* MarvelComicsBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelComicsBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0BE58D482E48C961000C6179 /* MarvelStatus */ = {
+		0BE58D6E2E48CA81000C6179 /* MarvelStatus */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MarvelStatus;
+			sourceTree = "<group>";
+		};
+		0BE58D9A2E48CDBC000C6179 /* MarvelComicsBarHelper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MarvelComicsBarHelper;
+			sourceTree = "<group>";
+		};
+		0BE58DB32E48D02E000C6179 /* MarvelComicsBarTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MarvelComicsBarTests;
+			sourceTree = "<group>";
+		};
+		0BE58DCB2E48D2BE000C6179 /* Products */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,21 +58,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BE58D962E48CDBC000C6179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE58DAF2E48D02E000C6179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0BE58D3D2E48C961000C6179 = {
 			isa = PBXGroup;
 			children = (
-				0BE58D482E48C961000C6179 /* MarvelStatus */,
+				0BE58DCB2E48D2BE000C6179 /* Products */,
+				0BE58D752E48CAC8000C6179 /* readme.md */,
+				0BE58D6E2E48CA81000C6179 /* MarvelStatus */,
+				0BE58D9A2E48CDBC000C6179 /* MarvelComicsBarHelper */,
+				0BE58DB32E48D02E000C6179 /* MarvelComicsBarTests */,
 				0BE58D472E48C961000C6179 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		0BE58D472E48C961000C6179 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				0BE58D462E48C961000C6179 /* MarvelStatus.app */,
+				0BE58D992E48CDBC000C6179 /* MarvelComicsBarHelper.app */,
+				0BE58DB22E48D02E000C6179 /* MarvelComicsBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,7 +115,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				0BE58D482E48C961000C6179 /* MarvelStatus */,
+				0BE58D6E2E48CA81000C6179 /* MarvelStatus */,
+				0BE58DCB2E48D2BE000C6179 /* Products */,
 			);
 			name = MarvelStatus;
 			packageProductDependencies = (
@@ -69,6 +124,51 @@
 			productName = MarvelStatus;
 			productReference = 0BE58D462E48C961000C6179 /* MarvelStatus.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0BE58D982E48CDBC000C6179 /* MarvelComicsBarHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE58DA52E48CDBD000C6179 /* Build configuration list for PBXNativeTarget "MarvelComicsBarHelper" */;
+			buildPhases = (
+				0BE58D952E48CDBC000C6179 /* Sources */,
+				0BE58D962E48CDBC000C6179 /* Frameworks */,
+				0BE58D972E48CDBC000C6179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0BE58D9A2E48CDBC000C6179 /* MarvelComicsBarHelper */,
+			);
+			name = MarvelComicsBarHelper;
+			packageProductDependencies = (
+			);
+			productName = MarvelComicsBarHelper;
+			productReference = 0BE58D992E48CDBC000C6179 /* MarvelComicsBarHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BE58DB12E48D02E000C6179 /* MarvelComicsBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE58DB82E48D02E000C6179 /* Build configuration list for PBXNativeTarget "MarvelComicsBarTests" */;
+			buildPhases = (
+				0BE58DAE2E48D02E000C6179 /* Sources */,
+				0BE58DAF2E48D02E000C6179 /* Frameworks */,
+				0BE58DB02E48D02E000C6179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BE58DB72E48D02E000C6179 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0BE58DB32E48D02E000C6179 /* MarvelComicsBarTests */,
+			);
+			name = MarvelComicsBarTests;
+			packageProductDependencies = (
+			);
+			productName = MarvelComicsBarTests;
+			productReference = 0BE58DB22E48D02E000C6179 /* MarvelComicsBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -82,6 +182,13 @@
 				TargetAttributes = {
 					0BE58D452E48C961000C6179 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					0BE58D982E48CDBC000C6179 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					0BE58DB12E48D02E000C6179 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 0BE58D452E48C961000C6179;
 					};
 				};
 			};
@@ -100,12 +207,29 @@
 			projectRoot = "";
 			targets = (
 				0BE58D452E48C961000C6179 /* MarvelStatus */,
+				0BE58D982E48CDBC000C6179 /* MarvelComicsBarHelper */,
+				0BE58DB12E48D02E000C6179 /* MarvelComicsBarTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0BE58D442E48C961000C6179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE58D762E48CACF000C6179 /* readme.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE58D972E48CDBC000C6179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE58DB02E48D02E000C6179 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +246,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BE58D952E48CDBC000C6179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE58DAE2E48D02E000C6179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BE58DB72E48D02E000C6179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BE58D452E48C961000C6179 /* MarvelStatus */;
+			targetProxy = 0BE58DB62E48D02E000C6179 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0BE58D532E48C962000C6179 /* Debug */ = {
@@ -248,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MarvelStatus/MarvelStatus.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MarvelStatus/Resources/MarvelStatus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -262,10 +408,12 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.MarvelStatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MarvelStatus/Sources/Utilities/MarvelStatus-Birdging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -275,7 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MarvelStatus/MarvelStatus.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MarvelStatus/Resources/MarvelStatus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -289,11 +437,107 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.MarvelStatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MarvelStatus/Sources/Utilities/MarvelStatus-Birdging-Header.h";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0BE58DA62E48CDBD000C6179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MarvelComicsBarHelper/MarvelComicsBarHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MarvelComicsBarHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.MarvelComicsBarHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0BE58DA72E48CDBD000C6179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MarvelComicsBarHelper/MarvelComicsBarHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MarvelComicsBarHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.MarvelComicsBarHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0BE58DB92E48D02E000C6179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.MarvelComicsBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelStatus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarvelStatus";
+			};
+			name = Debug;
+		};
+		0BE58DBA2E48D02E000C6179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.MarvelComicsBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelStatus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarvelStatus";
 			};
 			name = Release;
 		};
@@ -314,6 +558,24 @@
 			buildConfigurations = (
 				0BE58D562E48C962000C6179 /* Debug */,
 				0BE58D572E48C962000C6179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE58DA52E48CDBD000C6179 /* Build configuration list for PBXNativeTarget "MarvelComicsBarHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE58DA62E48CDBD000C6179 /* Debug */,
+				0BE58DA72E48CDBD000C6179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE58DB82E48D02E000C6179 /* Build configuration list for PBXNativeTarget "MarvelComicsBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE58DB92E48D02E000C6179 /* Debug */,
+				0BE58DBA2E48D02E000C6179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
